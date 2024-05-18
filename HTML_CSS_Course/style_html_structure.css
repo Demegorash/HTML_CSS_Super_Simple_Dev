@@ -1,0 +1,31 @@
+button {
+    background-color: hsl(9, 88%, 67%);
+    color: hsl(208, 100%, 97%);
+    padding: 8px;
+    border-radius: 3px;
+    border-style: solid;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    box-shadow: 5px 5px 10px hsl(355, 81%, 75%);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+    background-color: hsl(33, 75%, 95%);
+}
+
+a {
+    padding: 16px;
+    border-radius: 2px;
+}
+
+a:hover {
+    background-color: hsl(228, 66%, 84%);
+}

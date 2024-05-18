@@ -1,0 +1,19 @@
+.thumbnail {
+    width: 300px;
+    display: block;
+}
+
+.search-bar {
+    display: block;
+}
+
+.product-title {
+    width: 300px;
+}
+
+.product-preview {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
