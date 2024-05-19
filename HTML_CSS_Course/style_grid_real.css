@@ -1,0 +1,51 @@
+p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.search-bar {
+    display: block;
+}
+
+.product-title {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-logo {
+    width: 90%;
+    border-radius: 50px;
+}
+
+.thumbnail-row {
+    margin-bottom: 12px;
+}
+
+.product-author, .product-description {
+    font-size: 14px;
+    color: hsl(24, 5%, 18%);
+}
+
+.product-author {
+    margin-bottom: 4px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
