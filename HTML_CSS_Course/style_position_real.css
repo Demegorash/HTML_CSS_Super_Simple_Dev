@@ -1,0 +1,175 @@
+body {
+    margin: 0px;
+    height: 3000px;
+    padding-top: 80px;
+    padding-left: 80px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: hsl(35, 38%, 81%);
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top:55px;
+    background-color: hsl(0, 0%, 100%);
+    width: 72px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.right-section {
+    width: 180px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.product-title {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-logo {
+    width: 90%;
+    border-radius: 50px;
+}
+
+.thumbnail-row {
+    margin-bottom: 12px;
+}
+
+.product-author, .product-description {
+    font-size: 14px;
+    color: hsl(24, 5%, 18%);
+}
+
+.product-author {
+    margin-bottom: 4px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+.hamburguer-menu {
+    height: 41px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.youtube-logo {
+    height: 50px;
+}
+
+.search-button {
+    height: 40px;
+    width: 60px;
+    background-color: hsl(0, 21%, 92%);
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(0, 3%, 77%);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.microphone-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(0, 9%, 90%);
+}
+
+.search-bar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(0, 3%, 77%);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px hsl(0, 7%, 81%);
+    width: 0px;
+}
+
+.search-bar::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.search-icon {
+    height: 27px;
+    margin-top: 4px;
+}
+
+.voice-search-icon {
+    height: 25px;
+    margin-top: 4px;
+}
+
+.upload-icon {
+    height: 24px;
+}
+
+.youtube-apps-icon {
+    height: 24px;
+}
+
+.notification-icon {
+    height: 24px;
+}
+
+.current-user-picture {
+    height: 32px;
+    border-radius: 16px;
+}
