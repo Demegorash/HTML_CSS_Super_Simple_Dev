@@ -5,10 +5,10 @@ body {
     padding-left: 96px;
     padding-right: 24px;
     background-color: hsl(0, 0%, 93%);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 p {
-    font-family: 'Times New Roman', Times, serif;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -127,6 +127,25 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 40px;
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .hamburguer-menu {
@@ -148,6 +167,34 @@ p {
     border-color: hsl(0, 3%, 77%);
     margin-left: -1px;
     margin-right: 10px;
+}
+
+.search-button, .microphone-button, .upload-icon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .tooltip, .microphone-button .tooltip, .upload-icon-container .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip, .microphone-button:hover .tooltip, .upload-icon-container:hover .tooltip  {
+    opacity: 1;
 }
 
 .microphone-button {
@@ -172,18 +219,15 @@ p {
 }
 
 .search-bar::placeholder {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
 }
 
 .search-icon {
     height: 27px;
-    margin-top: 4px;
 }
 
 .voice-search-icon {
     height: 25px;
-    margin-top: 4px;
 }
 
 .upload-icon {
@@ -208,7 +252,6 @@ p {
     right: -5px;
     background-color: rgb(252, 100, 100);
     color: white;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 11px;
     padding-left: 5px;
     padding-right: 5px;
@@ -228,7 +271,6 @@ p {
     position: absolute;
     bottom: 8px;
     right: 5px;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
     font-weight: 500;
     padding: 4px;
